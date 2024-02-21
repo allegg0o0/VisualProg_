@@ -1,0 +1,66 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="450"
+        x:Class="Avalonia_.MainWindow"
+        Title="Avalonia_"
+		ExtendClientAreaToDecorationsHint = "True">
+
+	<Grid Width="600" Height="449" VerticalAlignment="Stretch">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="1*"/>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="2*"/>
+		</Grid.ColumnDefinitions>
+
+		<StackPanel Grid.Column="0" Orientation="Vertical" VerticalAlignment="Stretch">
+			<Border BorderThickness="2" BorderBrush="Black">
+				<Button Click="Button_Click" MinHeight="41" Content="Khaki"
+						HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Khaki" />
+			</Border>
+			<Border BorderThickness="2" BorderBrush="Black">
+				<Button Click="Button_Click" MinHeight="41" Content="LightBlue"
+						HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="LightBlue"/>
+			</Border>
+			<Border BorderThickness="2" BorderBrush="Black">
+				<Button Click="Button_Click" MinHeight="41" Content="LightCoral"
+						HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="LightCoral"/>
+			</Border>
+			<Border BorderThickness="2" BorderBrush="Black">
+				<Button Click="Button_Click" MinHeight="41" Content="LightGreen"
+						HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="LightGreen"/>
+			</Border>
+			<Border BorderThickness="2" BorderBrush="Black">
+				<Button Click="Button_Click" MinHeight="41" Content="LightPink"
+						HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="LightPink"/>
+			</Border>
+			<Border BorderThickness="2" BorderBrush="Black">
+				<Button Click="Button_Click" MinHeight="41" Content="LightSalmon"
+						HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="LightSalmon"/>
+			</Border>
+
+			<Border BorderThickness="2" BorderBrush="Black">
+				<Button Click="Button_Click" MinHeight="41" Content="LightSkyBlue"
+						HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="LightSkyBlue"/>
+			</Border>
+			<Border BorderThickness="2" BorderBrush="Black">
+				<Button Click="Button_Click" MinHeight="41" Content="LightSteelBlue"
+						HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="LightSteelBlue"/>
+			</Border>
+			<Border BorderThickness="2" BorderBrush="Black">
+				<Button Click="Button_Click" MinHeight="41" Content="LightYellow"
+						HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="LightYellow"/>
+			</Border>
+			<Border BorderThickness="2.5" BorderBrush="Black">
+				<Button Click="Button_Click" MinHeight="41" Content="Lavender"
+						HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Lavender"/>
+			</Border>
+		</StackPanel>
+
+		<GridSplitter Grid.Column="1" Background="Black" Width="2"/>
+
+		<Rectangle x:Name="Rect" Grid.Column="2" Name="colorRectangle" Fill="Khaki"/>
+	</Grid>
+	
+</Window>
